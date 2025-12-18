@@ -36,6 +36,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd discoverdollar-mean-devops
-            docker-compose pull
-            docker-compose up -d
+            cd ~/discoverdollar-mean-devops
+            sudo docker-compose pull
+            sudo docker-compose up -d
